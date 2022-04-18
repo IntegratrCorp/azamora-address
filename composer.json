@@ -1,0 +1,29 @@
+{
+    "name": "integratrcorp/azamora-address",
+    "description": "Provide list of countries, city, provinces within the address",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Integratrcorp\\AzamoraAddress\\": "src/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Database\\Factories\\": "database/factories/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Angelo Zamora",
+            "email": "a.zamora@integratrcorp.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "laravel/lumen-framework": "^9.0",
+        "fzaninotto/faker": "^1.5"
+    }
+}
