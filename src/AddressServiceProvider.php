@@ -41,5 +41,9 @@ class AddressServiceProvider extends ServiceProvider
             'valid_country_code',
             ValidCountry::class . '@validate'
         );
+
+        $this->publishes([
+            __DIR__ . '/../storage/app/flags/' => storage_path('app/flags'),
+        ], 'flags');
     }
 }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 use Integratrcorp\AzamoraAddress\Models\Country;
 
 class CountrySeeder extends Seeder
@@ -27,6 +28,7 @@ class CountrySeeder extends Seeder
         while (($data = fgetcsv($handle)) !== false) {
             Country::create([
                 'code' => $data[1],
+                'logo' => storage_path('flags/' . $data[1] . '.jpeg'),
                 'name' => $data[0],
             ]);
         }

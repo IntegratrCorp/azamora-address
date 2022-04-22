@@ -19,6 +19,7 @@ class CountryHttpTest extends TestCase
         $this->get('country');
 
         $response = $this->response->json();
+
         $this->assertResponseOk();
         $this->assertEquals(10, count($response['data']));
     }

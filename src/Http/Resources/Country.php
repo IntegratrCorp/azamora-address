@@ -13,7 +13,8 @@ class Country extends JsonResource
     {
         return [
             'code' => $this->code,
-            'name' => $this->name,
+            'logo' => $this->logo,
+            'name' => $this->name
         ];
     }
 }

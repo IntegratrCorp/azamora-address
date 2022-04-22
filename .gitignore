@@ -1,5 +1,6 @@
 .phpunit.result.cache
 vendor
-storage/
+storage/framework
+storage/logs
 report/
 .DS_Store

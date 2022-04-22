@@ -16,6 +16,7 @@ class CountryFactory extends Factory
     {
         return [
             'name' => $this->faker->country,
+            'logo' => $this->faker->url,
             'code' => $this->faker->countryCode,
         ];
     }
