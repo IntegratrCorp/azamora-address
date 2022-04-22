@@ -25,4 +25,5 @@ Add this to your project composer.json file.
 $   composer update
 $   php artisan migrate --path=vendor/integratrcorp/azamora-address/database/migrations 
 $   php artisan db:seed
+$   php artisan vendor:publish --provider="Integratrcorp\AzamoraAddress\AddressServiceProvider" --tag="flags"
 ```
